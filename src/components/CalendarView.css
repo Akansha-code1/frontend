@@ -1,0 +1,145 @@
+/* ===== CONTAINER ===== */
+.calendar-container {
+  padding: 20px;
+  color: #e2e8f0;
+}
+
+/* ===== REACT CALENDAR OVERRIDE ===== */
+.react-calendar {
+  width: 100%;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: inherit;
+}
+
+/* NAVIGATION */
+.react-calendar__navigation button {
+  color: #94a3b8;
+  font-weight: 500;
+  background: none;
+  border-radius: 8px;
+}
+
+.react-calendar__navigation button:hover {
+  background: #1e293b;
+  color: white;
+}
+
+/* WEEKDAYS */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* DAY TILE */
+.react-calendar__tile {
+  padding: 10px 6px;
+  background: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.react-calendar__tile:hover {
+  background: rgba(99,102,241,0.15);
+}
+
+/* TODAY */
+.today {
+  border: 2px solid #22c55e !important;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(34,197,94,0.4);
+}
+
+/* SELECTED DAY */
+.selected-day {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+  color: white !important;
+  border-radius: 10px;
+}
+
+/* ===== DOTS ===== */
+.dot-container {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px currentColor;
+}
+
+/* +MORE */
+.more {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+/* ===== TASK PANEL ===== */
+.calendar-task {
+  background: #1e293b;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  transition: 0.25s;
+}
+
+.calendar-task:hover {
+  transform: translateY(-2px);
+  border-color: #6366f1;
+}
+
+/* META INFO */
+.meta {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* DONE TASK */
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* ===== PRIORITY COLORS (DOTS / TEXT) ===== */
+.high {
+  color: #ef4444;
+}
+
+.medium {
+  color: #f59e0b;
+}
+
+.low {
+  color: #22c55e;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-day {
+  text-align: center;
+  margin-top: 10px;
+  color: #64748b;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .react-calendar {
+    padding: 10px;
+  }
+
+  .react-calendar__tile {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+}

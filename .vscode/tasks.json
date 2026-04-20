@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "test",
+			"path": "backend",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "npm: test - backend",
+			"detail": "echo \"Error: no test specified\" && exit 1"
+		}
+	]
+}
