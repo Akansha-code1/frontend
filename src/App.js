@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { useState, useEffect } from "react";
 
 import Sidebar from "./components/Sidebar";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard.jsx";
 import Tasks from "./pages/Tasks";
 import Subjects from "./pages/Subjects";
 import Timetable from "./pages/Timetable";
