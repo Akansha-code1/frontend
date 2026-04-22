@@ -1,0 +1,124 @@
+/* ===== CONTAINER ===== */
+.leaderboard-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+  color: white;
+}
+
+/* ===== TITLE ===== */
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ===== TOP 3 ===== */
+.top3 {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.podium {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 20px;
+  border-radius: 18px;
+  width: 140px;
+  text-align: center;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.podium:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+.rank-1 {
+  transform: scale(1.15);
+}
+
+.rank-2 {
+  opacity: 0.95;
+}
+
+.rank-3 {
+  opacity: 0.85;
+}
+
+.name {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.badge {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.xp {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* ===== LIST GRID ===== */
+.leaderboard-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.leaderboard-card {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  padding: 18px;
+  border-radius: 16px;
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  transition: 0.3s;
+}
+
+.leaderboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* ===== HEADER ===== */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== STATS ===== */
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===== PROGRESS ===== */
+.progress {
+  height: 8px;
+  background: #0f172a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 10px;
+}
+
+/* ===== EMPTY ===== */
+.empty-text {
+  text-align: center;
+  color: #94a3b8;
+}
